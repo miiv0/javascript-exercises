@@ -1,12 +1,5 @@
 const leapYears = function (year) {
-    divYear = year / 4;
-    testYear = Math.round(divYear);
-    console.log(testYear);
-    if (testYear === divYear) {
-        return true
-    }
-    else
-        return false
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 };
 
 // Do not edit below this line
