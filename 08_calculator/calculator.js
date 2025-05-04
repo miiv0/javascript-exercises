@@ -10,7 +10,6 @@ const subtract = function (digit, digit2) {
 
 const sum = function () {
   array = arguments[0];
-  console.log("array" + array);
   let result = 0;
   for (let i = 0; i < array.length; i++) {
     result += array[i];
@@ -18,8 +17,12 @@ const sum = function () {
   return result;
 };
 
-const multiply = function (digit, digit2) {
-  const result = digit * digit2;
+const multiply = function () {
+  array = arguments[0];
+  let result = 1;
+  for (let i = 0; i < array.length; i++) {
+    result *= array[i];
+  }
   return result;
 };
 
