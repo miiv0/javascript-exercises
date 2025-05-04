@@ -8,8 +8,14 @@ const subtract = function (digit, digit2) {
   return result;
 };
 
-const sum = function (digit, digit2) {
-
+const sum = function () {
+  array = arguments[0];
+  console.log("array" + array);
+  let result = 0;
+  for (let i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  return result;
 };
 
 const multiply = function (digit, digit2) {
