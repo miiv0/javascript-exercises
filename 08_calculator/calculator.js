@@ -34,8 +34,15 @@ const power = function (digit, digit2) {
   return result;
 }
 
-const factorial = function (digit, digit2) {
-
+const factorial = function (digit) {
+  const times = digit;
+  let num = digit;
+  let result = 1;
+  for (let i = 0; i < times; i++) {
+    result *= num;
+    num--;
+  }
+  return result;
 };
 
 // Do not edit below this line
