@@ -1,25 +1,32 @@
-const add = function() {
-	
+const add = function (digit, digit2) {
+  const result = digit + digit2;
+  return result;
 };
 
-const subtract = function() {
-	
+const subtract = function (digit, digit2) {
+  const result = digit - digit2;
+  return result;
 };
 
-const sum = function() {
-	
-};
-
-const multiply = function() {
+const sum = function (digit, digit2) {
 
 };
 
-const power = function() {
-	
+const multiply = function (digit, digit2) {
+  const result = digit * digit2;
+  return result;
 };
 
-const factorial = function() {
-	
+const power = function (digit, digit2) {
+  let result = 1;
+  for (let i = 0; i < digit2; i++) {
+    result *= digit;
+  }
+  return result;
+}
+
+const factorial = function (digit, digit2) {
+
 };
 
 // Do not edit below this line
